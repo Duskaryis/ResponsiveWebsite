@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 html {
 	font-family: sans-serif;
 	width: 1, 024px;
@@ -265,14 +270,17 @@ a {
 	padding: 30px;
 	gap: 10px;
 	flex-direction: column;
+	border: 1px black solid;
+	background-color: black;
 }
 
 .social-media-box {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	height: 30px;
-	width: 548px;
 	gap: 30px;
+	border: 1px black solid;
+	color: #676767;
 }
 
 .social-media-box nav {
@@ -285,4 +293,52 @@ a {
 	display: flex;
 	justify-content: space-evenly;
 	gap: 10px;
+	width: 548px;
+	height: 30px;
+}
+
+.social-media-box nav img {
+	height: 30px;
+	width: 30px;
+}
+
+.social-media-box nav li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+/* Company Info section */
+
+.company-info {
+	display: flex;
+	justify-content: center;
+	width: Fill (964px) px;
+	height: Hug (239px) px;
+	padding: 80px 0px 60px 0px;
+	gap: 30px;
+	text-align: center;
+}
+
+.company-info h2 {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16.71px;
+	text-align: center;
+}
+
+.company-info p {
+	color: #676767;
+}
+
+.copyright {
+	color: #969696;
+	text-align: center;
+	height: 40px;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: center;
 }
