@@ -1,0 +1,302 @@
+html {
+	font-family: sans-serif;
+	width: 1, 024px;
+	height: 1, 736px;
+	gap: 0px;
+}
+
+/* Header Section */
+
+.header-top {
+	display: flex;
+	align-items: center;
+	height: 70px;
+	padding: 10px 30px 10px 30px;
+	gap: 0px;
+	justify-content: space-between;
+	opacity: 0px;
+}
+
+.header-container1 {
+	display: flex;
+	height: 50px;
+	width: 194px;
+	max-width: 1024px;
+	gap: 10px;
+}
+
+.header-container1 img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+}
+
+.header-container2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	line-height: 28.64px;
+	font-weight: 400;
+	color: #969696;
+}
+
+.top-nav {
+	padding: 4px, 0px, 4px, 0px;
+	gap: 30px;
+	background-color: white;
+	width: 262px;
+}
+
+.header-top > nav ul {
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+	line-height: 21.78px;
+}
+
+.header-top > nav li {
+	height: 22px;
+}
+
+.nav-about-us {
+	width: 82px;
+}
+
+a {
+	text-decoration: none;
+	color: #737373;
+}
+
+/* About Section */
+
+.about-us-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 298px;
+	padding: 80px 30px 80px 30px;
+	gap: 14px;
+	text-align: center;
+	flex-direction: column;
+}
+
+.about-us {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 237px;
+	height: 76px;
+	gap: 0px;
+	font-size: 64px;
+	font-weight: 110;
+	line-height: 76.38px;
+	text-align: center;
+	color: #5d5d5d;
+}
+
+.about-us-text {
+	display: flex;
+	width: 900px;
+	height: 48px;
+	gap: 0px;
+	font-size: 16px;
+	font-weight: 510;
+	line-height: 24px;
+	text-align: center;
+	color: #404040;
+}
+
+/* Content Section */
+
+.content-container {
+	display: flex;
+	height: 345px;
+	padding: 0px, 30px, 0px, 30px;
+	gap: 30px;
+}
+
+.content-container img {
+	height: 180px;
+	width: 301.33px;
+	gap: 10px;
+}
+
+.content-container subtext {
+	height: 155px;
+	width: 301.33px;
+	gap: 10px;
+}
+
+/* Team Section */
+
+.our-team-box {
+	display: flex;
+	height: 250px;
+	padding: 80px 30px 60px 30px;
+	gap: 14px;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.our-team-header {
+	display: flex;
+	justify-content: center;
+}
+
+.our-team-header h2:before,
+.our-team-header h2:after {
+	display: block;
+	content: "";
+	height: 1px;
+	width: 20px;
+	background: linear-gradient(to left, #969696, #969696);
+	text-align: center;
+}
+
+.our-team-header h2:after {
+	background: linear-gradient(to right, #969696, #969696);
+	text-align: center;
+}
+
+.our-team-header h2 {
+	height: 48px;
+	width: 149px;
+	font-size: 40px;
+	font-weight: 110;
+	line-height: 47.73px;
+	text-align: center;
+}
+
+.team-text {
+	text-align: center;
+}
+
+.team-members-box {
+	display: flex;
+	padding: 0px, 30px, 80px, 30px;
+	height: 331px;
+	gap: 40px;
+	border: 1px black solid;
+}
+
+.chevron-left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 251px;
+	width: 55px;
+	gap: 10px;
+	border: 1px black solid;
+	color: #969696;
+}
+
+.fa-solid fa-chevron-left {
+	height: 24px;
+	width: 15px;
+	font-family: Font Awesome 6 Free;
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 24px;
+	padding: 0px, 20px, 0px, 20px;
+}
+
+.team {
+	display: flex;
+	gap: 40px;
+	padding: 80px, 30px, 80px, 30px;
+	border: 1px black solid;
+	justify-content: space-evenly;
+	justify-content: center;
+}
+
+.team-member {
+	height: 251px;
+	width: 163.5px;
+	border: 1px black solid;
+}
+
+.team-img {
+	display: flex;
+	gap: 10px;
+	max-width: 100%;
+	max-height: 100%;
+	flex-direction: column;
+}
+
+.chevron-right {
+	height: 24px;
+	width: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 251px;
+	width: 55px;
+	gap: 10px;
+	border: 1px black solid;
+	color: #969696;
+}
+
+.fa-solid fa-chevron-right {
+	font-family: Font Awesome 6 Free;
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 24px;
+	padding: 0px, 20px, 0px, 20px;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: center;
+	height: 239px;
+	width: 964px;
+	padding: 80px, 0px, 60px, 0px;
+	gap: 10px;
+	flex-direction: row;
+}
+
+/*
+.social-media-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.bottom-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.bottom-nav ul {
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	line-height: 21.78px;
+}
+
+.company-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.copyright {
+	display: flex;
+	height: 600px;
+	width: 40px;
+	text-align: center;
+	flex-direction: row;
+	align-items: center;
+}
+*/
