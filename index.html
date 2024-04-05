@@ -29,6 +29,19 @@
 					<li><a href="#contact-us">Contact</a></li>
 				</ul>
 			</nav>
+			<div class="hamburger-button">
+				<button class="hamburger" onclick="toggleMenu()">
+					<span class="line"><a href="#page-top">Home</a></span>
+					<span class="line"><a href="#about-us">About Us</a></span>
+					<span class="line"><a href="#contact-us">Contact</a></span>
+				</button>
+				<script>
+					function toggleMenu() {
+						const button = document.querySelector(".hamburger");
+						button.classList.toggle("is-active");
+					}
+				</script>
+			</div>
 		</div>
 		<div class="about-us-container">
 			<div class="about-us" id="about-us">
