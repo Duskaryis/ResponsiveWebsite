@@ -131,6 +131,14 @@ a {
 	gap: 10px;
 }
 
+.img1,
+.img2,
+.img3 {
+	height: 345px;
+	width: 301.33px;
+	text-align: left;
+}
+
 .content-container subtext {
 	height: 155px;
 	width: 301.33px;
@@ -151,7 +159,6 @@ a {
 .our-team-header {
 	display: flex;
 	justify-content: space-around;
-	
 }
 
 .our-team-header h2:before {
@@ -172,7 +179,6 @@ a {
 	line-height: 47.73px;
 	text-align: center;
 	color: #969696;
-	
 }
 
 .our-team-header h2:after {
@@ -186,7 +192,6 @@ a {
 	margin-left: 10px;
 }
 
-
 .team-text {
 	text-align: center;
 }
@@ -196,6 +201,7 @@ a {
 	padding: 0px, 30px, 80px, 30px;
 	height: 331px;
 	gap: 40px;
+	justify-content: center;
 }
 
 .chevron-left {
