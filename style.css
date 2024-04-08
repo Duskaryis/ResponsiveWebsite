@@ -251,6 +251,10 @@ a {
 	color: #969696;
 }
 
+.fa-solid.fa-chevron-left::before {
+	content: "\f053";
+}
+
 .fa-solid fa-chevron-left {
 	height: 24px;
 	width: 15px;
@@ -316,6 +320,10 @@ a {
 	padding: 0px 20px 0px 20px;
 }
 
+.fa-solid.fa-chevron-right::before {
+	content: "\f054";
+}
+
 .footer-container {
 	display: flex;
 	padding: 30px;
@@ -365,8 +373,8 @@ a {
 .company-info {
 	display: flex;
 	justify-content: center;
-	width: Fill (964px) px;
-	height: Hug (239px) px;
+	width: 964px;
+	height: 239px;
 	padding: 80px 0px 60px 0px;
 	gap: 30px;
 	text-align: center;
@@ -396,10 +404,16 @@ a {
 
 @media (max-width: 768px) {
 	.hamburger-button {
+		display: grid;
+	}
+
+	.menu-list {
 		display: flex;
+		padding: 30px 0px;
 	}
 
 	.menu {
+		display: grid;
 		order: -1;
 		perspective: 800px;
 	}
@@ -414,6 +428,10 @@ a {
 
 	[aria-controls="menu-list"] {
 		display: block;
+		background-color: white;
+		border: none;
+		height: 29px;
+		width: 16px;
 	}
 
 	[aria-expanded="true"] ~ ul {
@@ -504,5 +522,11 @@ a {
 
 	.chevron-right {
 		height: 676px;
+	}
+
+	.footer-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
