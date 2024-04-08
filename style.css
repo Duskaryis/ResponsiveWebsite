@@ -5,8 +5,8 @@
 
 html {
 	font-family: sans-serif;
-	width: 1, 024px;
-	height: 1, 736px;
+	width: 1024px;
+	height: 1736px;
 	gap: 0px;
 }
 
@@ -19,7 +19,6 @@ html {
 	padding: 10px 30px 10px 30px;
 	gap: 0px;
 	justify-content: space-between;
-	opacity: 0px;
 }
 
 .header-container1 {
@@ -50,7 +49,7 @@ html {
 }
 
 .top-nav {
-	padding: 4px, 0px, 4px, 0px;
+	padding: 4px 0px 4px 0px;
 	gap: 30px;
 	background-color: white;
 	width: 262px;
@@ -78,36 +77,44 @@ a {
 	color: #737373;
 }
 
-.hamburger {
-	display: inline-block;
-	cursor: pointer;
-	padding: 10px 15px;
+.hamburger-button {
+	display: none;
+}
+
+.button {
+	background: #333;
+	border: 0;
+	padding: 10px 20px;
+	color: white;
+	border-radius: 5px;
+}
+
+.button-text {
+	pointer-events: none;
+}
+
+.menu ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	list-style: none;
+	grid-gap: 10px;
+	padding: 0;
+}
+
+.menu a {
 	background-color: #333;
 	color: white;
-	border: none;
-	border-radius: 4px;
-}
-
-.line {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 5px;
 	display: block;
-	width: 25px;
-	height: 3px;
-	background-color: white;
-	margin: 5px auto;
-	transition: all 0.3s;
+	text-align: center;
 }
 
-/* Styles for animating the lines into an X */
-.is-active .line:nth-child(1) {
-	transform: translateY(8px) rotate(45deg);
-}
-
-.is-active .line:nth-child(2) {
-	opacity: 0;
-}
-
-.is-active .line:nth-child(3) {
-	transform: translateY(-8px) rotate(-45deg);
+[aria-controls="menu-list"] {
+	display: none;
 }
 
 /* About Section */
@@ -153,7 +160,7 @@ a {
 .content-container {
 	display: flex;
 	height: 345px;
-	padding: 0px, 30px, 0px, 30px;
+	padding: 0px 30px 0px 30px;
 	gap: 30px;
 	justify-content: center;
 }
@@ -231,7 +238,7 @@ a {
 
 .team-members-box {
 	display: flex;
-	padding: 0px, 30px, 80px, 30px;
+	padding: 0px 30px 80px 30px;
 	height: 331px;
 	gap: 40px;
 	justify-content: center;
@@ -254,13 +261,13 @@ a {
 	font-size: 24px;
 	font-weight: 900;
 	line-height: 24px;
-	padding: 0px, 20px, 0px, 20px;
+	padding: 0px 20px 0px 20px;
 }
 
 .team {
 	display: flex;
 	gap: 40px;
-	padding: 80px, 30px, 80px, 30px;
+	padding: 80px 30px 80px 30px;
 	justify-content: space-evenly;
 	justify-content: center;
 }
@@ -309,7 +316,7 @@ a {
 	font-size: 24px;
 	font-weight: 900;
 	line-height: 24px;
-	padding: 0px, 20px, 0px, 20px;
+	padding: 0px 20px 0px 20px;
 }
 
 .footer-container {
@@ -390,12 +397,37 @@ a {
 	text-align: center;
 }
 
-@media all and (max-width: 500px) {
-	.content-container {
-		flex-wrap: wrap;
+@media (max-width: 700px) {
+	.menu {
+		order: -1;
+		perspective: 800px;
 	}
 
-	.team {
-		flex-wrap: wrap;
+	.menu ul {
+		max-height: 0;
+		overflow: hidden;
+		transform: rotateX(90deg);
+		transition: all 0.5s;
+		list-style: none;
+	}
+
+	[aria-controls="menu-list"] {
+		display: block;
+	}
+
+	[aria-expanded="true"] ~ ul {
+		display: grid;
+		max-height: 500px;
+		transform: rotateX(0);
+	}
+
+	[aria-expanded="false"] .close {
+		display: none;
+	}
+	[aria-expanded="true"] .open {
+		display: none;
+	}
+	[aria-expanded="true"] .close {
+		display: inline;
 	}
 }
