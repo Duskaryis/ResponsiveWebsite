@@ -239,6 +239,7 @@ a {
 	height: 331px;
 	gap: 40px;
 	justify-content: center;
+	align-items: center;
 }
 
 .chevron-left {
@@ -267,44 +268,51 @@ a {
 
 .team {
 	display: flex;
-	gap: 40px;
+	gap: 20px;
 	padding: 80px 30px 80px 30px;
 	justify-content: space-evenly;
 	justify-content: center;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
 }
 
 .team-member {
 	height: 251px;
-	width: 163.5px;
+	width: 100%;
 }
 
 .team-socials {
 	height: 80px;
-	width: 20px;
 	display: flex;
+	flex-direction: row;
 	gap: 10px;
 }
 
 .team-socials img {
 	height: 20px;
 	width: 20px;
-	display: flex;
-	flex-direction: row;
 }
 
 .team-img {
 	display: flex;
 	gap: 10px;
-	max-width: 100%;
-	max-height: 100%;
 	flex-direction: column;
+	width: 100%;
+}
+
+.team-text {
+	text-align: left;
+}
+
+.team-img img {
+	width: 100%;
 }
 
 .chevron-right {
 	height: 24px;
 	width: 15px;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	height: 251px;
 	width: 55px;
@@ -423,7 +431,7 @@ a {
 	}
 
 	.menu ul {
-		max-height: 0;
+		max-height: 0px;
 		overflow: hidden;
 		transform: rotateX(90deg);
 		transition: all 0.5s;
@@ -477,7 +485,6 @@ a {
 		padding: 0px 30px 0px 30px;
 		height: 480px;
 		justify-content: center;
-		align-items: left;
 	}
 
 	.img1,
@@ -492,8 +499,8 @@ a {
 	.subtext1,
 	.subtext2,
 	.subtext3 {
-		height: 90px;
-		width: 376.667px;
+		height: 100px;
+		width: 100%;
 	}
 
 	.subtext1,
@@ -501,7 +508,7 @@ a {
 	.subtext3 p {
 		height: 90px;
 		width: 376.667px;
-		gap: 10px;
+		gap: 300px;
 	}
 
 	.our-team-box {
@@ -514,6 +521,10 @@ a {
 		height: 756px;
 		padding: 0px 30px 80px 30px;
 		gap: 40px;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		width: auto;
 	}
 
 	.chevron-left {
@@ -521,8 +532,20 @@ a {
 	}
 
 	.team {
-		display: flex;
 		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.team-text {
+	}
+
+	.team-member {
+		width: 48%;
+		margin: auto;
+		height: auto;
+	}
+
+	.team-img {
 	}
 
 	.chevron-right {
@@ -541,7 +564,7 @@ a {
 	}
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 375px) {
 	.about-us-container {
 		height: 314px;
 		padding: 40px 16px 40px 16px;
@@ -594,6 +617,11 @@ a {
 		gap: 40px;
 	}
 
+	.team-member {
+		width: 100%;
+		margin: auto;
+	}
+
 	.chevron-left {
 		display: none;
 	}
@@ -632,19 +660,14 @@ a {
 		gap: 24px;
 	}
 
-	.social-media-box {
-		display: flex;
-		width: 126px;
-		height: 210px;
-		align-items: center;
-	}
-
 	.social-media-box nav ul {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: ;
 	}
 
 	.company-info {
+		margin-top: 50px;
 		width: 328px;
 		height: 373px;
 		padding: 40px 0px 0px 0px;
